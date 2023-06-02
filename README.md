@@ -2,9 +2,43 @@
 This GitHub workflow will build and deploy a React app to GitHub Pages. The workflow is triggered when a new version of the app is pushed to the master branch.
 
 # How to use
-To use this workflow, you will need to create a new GitHub repository and add the following file to the .github/workflows directory:
 
-`.github/workflows/react-app-ci-cd.yml`
+1. Create a new GitHub repository for your React app.
+Add the following file to the `.github/workflows` directory:
+```yml
+name: React App CI/CD
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Install dependencies
+        run: yarn install
+
+      - name: Build app
+        run: yarn build
+
+      - name: Deploy to gh-pages branch
+        run: |
+          git checkout gh-pages
+          git add -A
+          git commit -m "Deploying new version of React app"
+          git push
+ ```
+
+2. Commit and push the file to your repository.
+3. Whenever you push a new version of your React app to the master branch,
+the workflow will be triggered and the app will be built and deployed to the `gh-pages branch`.
+Finally, the results of the build will be opened in GitHub Pages.
 
 Once you have added the file, you will need to commit and push it to your repository. Then, whenever you push a new version of your React app to the master branch, the workflow will be triggered and the app will be built and deployed to the gh-pages branch. Finally, the results of the build will be opened in GitHub Pages.
 
