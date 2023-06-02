@@ -1,0 +1,28 @@
+name: React App Build and Deploy # by mahdi hazrati
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Install Dependencies
+        run: npm i
+
+      - name: Build react app
+        run: npm run build
+
+      - name: Deploy to gh-pages branch
+        run: |
+          git checkout gh-pages
+          git add -A
+          git commit -m "Deploying new version of React App (React-App-CI-CD)"
+          git push
+
+
