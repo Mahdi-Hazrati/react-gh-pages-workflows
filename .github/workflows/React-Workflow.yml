@@ -6,7 +6,7 @@ on:
       - master
 
 jobs:
-  build-and-deploy:
+  React=Workflow-beta:
     runs-on: ubuntu-latest
     steps:
       # Checkout the code from the repo
