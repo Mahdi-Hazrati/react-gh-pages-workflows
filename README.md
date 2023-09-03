@@ -1,4 +1,4 @@
-# React Workflow v1.0 - [Beta] 🚀
+# React gh-pages workflows v2.0 - [stable] 🚀
 This is a GitHub Action workflow that builds and deploys your React application to GitHub Pages. This action automates the process of building and deploying your React app, making it easier for you to focus on developing your application rather than worrying about deployment.
 
 Usage
