@@ -1,4 +1,4 @@
-name: React Workflow [Stable] ✨
+name: react gh-pages workflows ✨
 
 on:
   push:
@@ -30,3 +30,6 @@ jobs:
           personal_token: ${{ secrets.GITHUB_TOKEN }}
           publish_branch: gh-pages
           publish_dir: ./build
+
+
+# main Source code : https://github.com/Mahdi-Hazrati/react-gh-pages-workflows
