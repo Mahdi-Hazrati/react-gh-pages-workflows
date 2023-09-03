@@ -1,4 +1,4 @@
-name: React Workflow v1.0 - [Beta]
+name: React Workflow [Stable] ✨
 
 on:
   push:
@@ -6,51 +6,27 @@ on:
       - master
 
 jobs:
-  React=Workflow-beta:
+  build-and-deploy:
     runs-on: ubuntu-latest
+
     steps:
-      # Checkout the code from the repo
-      - name: Checkout Code
+      - name: Checkout repository
         uses: actions/checkout@v2
-        
-      # Install Node.js (required for building the React app)
-      - name: Setup Node.js
+
+      - name: Set up Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: '18.x'
-          
-      # Install dependencies and build the React app
-      - name: Install React App Dependencies
-        run: |
-          npm install
-      - name: Build React App
-        run: |
-          npm run build --if-present
-          
-      # Configure git user
-      - name: Configure Git User
-        env:
-        # Your Name For Commit
-          GIT_USERNAME: USERNAME
-        # Your Email For Commit
-          GIT_USEREMAIL: EMAIL
-        run: |
-          git config --local user.name "${GIT_USERNAME}"
-          git config --local user.email "${GIT_USEREMAIL}"
-      
-      # Copy the built files to the gh-pages branch
-      - name: Copy Built Files to gh-pages Branch
-        run: |
-          mkdir -p .deploy
-          mv build/* .deploy/
-          git checkout -b gh-pages || git branch gh-pages
-          rsync -av .deploy/ .
-          
-      # Commit the changes to the gh-pages branch
-      - name: Commit Changes to gh-pages Branch
-        run: |
-          git pull --rebase origin gh-pages
-          git add .
-          git commit -m "Build and deploy React app to gh-pages"
-          git push --set-upstream origin gh-pages
-          
+          node-version: 18
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build for production
+        run: npm run build
+
+      - name: Deploy to gh-pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          personal_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: gh-pages
+          publish_dir: ./build
