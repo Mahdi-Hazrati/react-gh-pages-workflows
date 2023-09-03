@@ -1,13 +1,12 @@
-<h1 align="center" >🚀 React GitHub Pages Workflows</h1>
+<h1 align="center" >✨ React GitHub Pages 🚀 Workflows ✨</h1>
 
-<div align="center"> ![React GitHub Pages Workflows thumbnails]() </div>
-
+![How-To-Use-React-Github-Pages-Workflows GIF](assets/How-To-Use-React-Github-Pages-Workflows.gif)
 
 Hey there, welcome to the React Workflow repository! This GitHub Action workflow is designed to automate the process of building and deploying your React application to GitHub Pages, saving you valuable time and effort. By leveraging the power of GitHub Pages, you can host your web application online for free, making it easily accessible to anyone with an internet connection. Let's delve into the reasons why this workflow is the perfect choice for your React projects:
 
 ## Why Choose React Github pages Workflows?
 
-☁  **Build Under Github Cloud Server** : If you deploy with this workflow, everything will be built on the GitHub server and saved multiple times. 🏢🔨💾 This means that you can leverage the power of GitHub's infrastructure to automate the building and deployment processes.
+☁  **Build Under Github Cloud Server** : If you deploy with this workflow, everything will be built on the GitHub server and saved multiple times.This means that you can leverage the power of GitHub's infrastructure to automate the building and deployment processes.
 
 🔧 **Automated Deployment**: Say goodbye to manual handling of the build and deployment process! This workflow automates these steps, allowing you to focus your energy on developing your application rather than worrying about deployment hassles.
 
@@ -67,6 +66,7 @@ jobs:
 # main Source code : https://github.com/Mahdi-Hazrati/react-gh-pages-workflows
 
 ```
+
 4. Customize the workflow as per your project requirements.
 5. Save the file, and the workflow will be activated.
 6. Ensure your React application resides in the master branch.
