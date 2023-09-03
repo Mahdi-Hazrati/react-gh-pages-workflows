@@ -20,7 +20,25 @@ Hey there, welcome to the React Workflow repository! This GitHub Action workflow
 
 Imagine you're working on a stunning React application and want to make it available to users worldwide. Instead of manually dealing with the build and deployment process, you can rely on this workflow. Simply push your changes to the master branch, and the workflow will automatically kick off. It will handle the build process, transforming your React app into a production-ready state. The resulting build files will be seamlessly deployed to the `gh-pages` branch, instantly making your application accessible to everyone with an internet connection.
 
-## How to Use (Step-by-Step)
+## Easy Peasy Method - Automatic
+
+Open Terminal in your root of `react app` direcotry and enter this command:
+```bash 
+npx react-gh-pages-workflows
+```
+and this command create latest verstion of github workflow for your react app
+then you should commit changes on push to github 
+```bash
+git add .
+git commit -m "Add Mahdi-Hazrati/react-gh-pages-workflows to react app"
+```
+then push changes to github:
+
+```bash
+git push origin master
+```
+
+## How to Use (Step-by-Step) - Manual
 
 📝 Here's a step-by-step guide to help you quickly set up and utilize this workflow for your projects:
 
