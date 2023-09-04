@@ -7,6 +7,7 @@
   "scripts": {
     "test": "echo \"Hello World\""
   },
+  "bin": "./index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Mahdi-Hazrati/react-gh-pages-workflows.git"
