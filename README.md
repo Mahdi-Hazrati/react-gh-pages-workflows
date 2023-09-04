@@ -1,6 +1,4 @@
-# ✨ [React GitHub Pages Workflows](https://github.com/Mahdi-Hazrati/react-gh-pages-workflows)🚀 [ Installer ] ✨</h1>
-
-Hey there, welcome to the React Workflow repository! This GitHub Action workflow is designed to automate the process of building and deploying your React application to GitHub Pages, saving you valuable time and effort. By leveraging the power of GitHub Pages, you can host your web application online for free, making it easily accessible to anyone with an internet connection. Let's delve into the reasons why this workflow is the perfect choice for your React projects:
+## ✨ [React GitHub Pages Workflows](https://github.com/Mahdi-Hazrati/react-gh-pages-workflows)🚀 [Installer] ✨</h1>
 
 ## Why Choose React Github pages Workflows?
 
