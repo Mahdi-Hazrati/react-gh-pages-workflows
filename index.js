@@ -44,7 +44,7 @@ https.get(options, (res) => {
 
     fs.writeFile(yamlPath, data, (err) => {
       if (err) throw err;
-      console.log(`${colors.green}Success! Everything went well.${colors.reset}`);
+      console.log(`${colors.green}Everything went well.${colors.reset}`);
       console.log(`${colors.green} ${repoName} successfully inital!.${colors.reset}`);
     });
   });

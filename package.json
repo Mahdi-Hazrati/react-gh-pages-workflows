@@ -1,6 +1,6 @@
 {
   "name": "react-gh-pages-workflows",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "easy peasy automate the process of building and deploying React application to GitHub Pages",
   "main": "index.js",
   "scripts": {
