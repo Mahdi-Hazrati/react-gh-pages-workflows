@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 // Import required modules
 const https = require("https");
 const fs = require("fs");
