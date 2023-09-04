@@ -3,7 +3,7 @@
   "version": "1.0.2",
   "description": "easy peasy automate the process of building and deploying React application to GitHub Pages",
   "main": "index.js",
-  "type": "module",
+  "type": "commonjs",
   "scripts": {
     "test": "echo \"Hello World\""
   },

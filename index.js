@@ -54,9 +54,6 @@ https
             fs.writeFile(yamlPath, data, (err) => {
                 if (err) throw err;
                 console.log(
-                    `${colors.green}Everything went well.${colors.reset}`
-                );
-                console.log(
                     `${colors.green} ${repoName} successfully initialized! ${colors.reset}`
                 );
             });
