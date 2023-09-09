@@ -1,10 +1,10 @@
 <h1 align="center" >✨ React GitHub Pages 🚀 Workflows ✨</h1>
 
-![How-To-Use-React-Github-Pages-Workflows GIF](assets/How-To-Use-React-Github-Pages-Workflows.gif)
+<video src="./assets/How-To-Use-react-gh-pages-workflows.mp4"></video>
 
 Hey there, welcome to the React Workflow repository! This GitHub Action workflow is designed to automate the process of building and deploying your React application to GitHub Pages, saving you valuable time and effort. By leveraging the power of GitHub Pages, you can host your web application online for free, making it easily accessible to anyone with an internet connection. Let's delve into the reasons why this workflow is the perfect choice for your React projects:
 
-## Why Choose React Github pages Workflows?
+## Why you should use `React Github pages Workflows`?
 
 ☁  **Build Under Github Cloud Server** : If you deploy with this workflow, everything will be built on the GitHub server and saved multiple times.This means that you can leverage the power of GitHub's infrastructure to automate the building and deployment processes.
 
@@ -14,13 +14,13 @@ Hey there, welcome to the React Workflow repository! This GitHub Action workflow
 
 🌐 **Accessible Web Hosting**: GitHub Pages provides a free and straightforward way to host your web application online. It offers a platform for showcasing your work to a global audience, without the need for complex setups or additional expenses.
 
-## Use Case
+## Use Case Scenario
 
 👩‍💻 Let's dive into an example use case to demonstrate the benefits of this workflow:
 
 Imagine you're working on a stunning React application and want to make it available to users worldwide. Instead of manually dealing with the build and deployment process, you can rely on this workflow. Simply push your changes to the master branch, and the workflow will automatically kick off. It will handle the build process, transforming your React app into a production-ready state. The resulting build files will be seamlessly deployed to the `gh-pages` branch, instantly making your application accessible to everyone with an internet connection.
 
-## Easy Peasy Method - Automatic
+## Easy Peasy Method (NPX) - Automatic
 
 Open Terminal in your root of `react app` direcotry and enter this command:
 ```bash 
@@ -38,7 +38,7 @@ then push changes to github:
 git push origin master
 ```
 
-## How to Use (Step-by-Step) - Manual
+## Manual Config Workflows (Step-by-Step)
 
 📝 Here's a step-by-step guide to help you quickly set up and utilize this workflow for your projects:
 
@@ -81,7 +81,7 @@ jobs:
           publish_dir: ./build
 
 
-# main Source code : https://github.com/Mahdi-Hazrati/react-gh-pages-workflows
+# Latest Workflows > https://github.com/Mahdi-Hazrati/react-gh-pages-workflows
 
 ```
 
