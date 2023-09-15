@@ -1,5 +1,7 @@
 # Developer Guide - React Workflow with GitHub Pages 👩‍💻📄
 
+![wokrflow visualization](./assets/image.png)
+
 This developer guide provides an in-depth explanation of the React Workflow with GitHub Pages. It covers each line of code in the workflow, explains how it works, provides guidance on debugging, and offers insights on how to improve and contribute to the project. Let's dive right in! 🚀
 
 ## Table of Contents 📑
