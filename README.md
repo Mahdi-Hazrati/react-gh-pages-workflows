@@ -40,6 +40,8 @@ git push origin master
 
 ## Manual Config Workflows (Step-by-Step)
 
+![workflows visualization](./assets/visualization.svg)
+
 📝 Here's a step-by-step guide to help you quickly set up and utilize this workflow for your projects:
 
 1. Go to the Actions tab in your GitHub repository.
