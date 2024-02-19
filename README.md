@@ -94,6 +94,62 @@ jobs:
 8. Sit back and relax while the workflow automates the build and deployment process for you.
 9. Once the process is complete, visit your GitHub Pages URL to access your live React application.
 
+## Next js
+
+```yml
+name: Deploy Next JS Application 🚀
+# Next Production Workflow for deploy app to github page
+on:
+  push:
+    branches: ["master"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build Next.js App
+        run: npm run build
+
+      - name: Upload artifact for deployment
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./out
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+
+# Latest Workflows > https://github.com/Mahdi-Hazrati/react-gh-pages-workflows
+```
 ## 💡 Want to Contribute?
 
 We welcome contributions to enhance our project! If you're interested in getting involved, please take a moment to review our [Contribution Guidelines](./CONTRIBUTING.md). These guidelines provide detailed information on how you can contribute to our project, from reporting issues to submitting pull requests. We truly appreciate your support and look forward to collaborating with you! 🙌🌟
